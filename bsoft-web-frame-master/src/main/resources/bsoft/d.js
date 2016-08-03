@@ -1,0 +1,1 @@
+$import(["dependency.bsoft.remoteService","dependency.bsoft.tool"]),$define("bsoft.d",{extend:"bsoft.c",init:function(e){console.log("d 构造函数执行"+e)},method1:function(){var e=$remoteService("hai.demoService","getMyInfo"),o=($remoteService("hai.demoService","saveData"),{num:"001"}),t=e(o);t.success(function(e){alert($o2s(e))}).error(function(e,o){alert(e+":"+o)})}});

@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>${title}</title>
+<script type="text/javascript" src="script/dependency.bsoft.boot.js"></script>
+<!-- <script src="script/dependency.angular.146.angular.js"></script> -->
+</head>
+<body>
+</body>
+<script type="text/javascript">
+	//写法1
+ 	$new("bsoft.d", "构造入参").then(function(d) {
+		d.method2();
+		d.method1();
+	}); 
+
+	 //写法2
+	/* $import("bsoft.d", function() {
+		var d = new bsoft.d("构造入参");
+		d.method2();
+		d.method1();
+	}); */
+
+	//加载模块
+	/* $import("bsoft.mod", function() {
+		var mod = new bsoft.mod(document.getElementsByTagName("body").item(0), "1111111111");
+		mod.method1();
+		mod.component.ima();
+		
+		//mod.remove();
+	}); */
+
+	//加载angular模块
+// 	$append(document.getElementsByTagName("body").item(0), "bsoft.angmod");
+</script>
+</html>

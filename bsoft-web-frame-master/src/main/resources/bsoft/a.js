@@ -1,0 +1,1 @@
+$import(["dependency.bsoft.remoteService","dependency.bsoft.tool"]),$define("bsoft.a",{init:function(e){console.log("a 构造函数执行"+e)},ima:function(){alert("我是a")}});
